@@ -6,11 +6,14 @@
   "author": "StrawberryChocolateFudge <hopeter@protonmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "inline-source-cli": "^2.0.0",
     "parcel-bundler": "^1.12.5",
     "typescript": "^4.4.3"
   },
   "scripts": {
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "inline": "cat dist/index.html | inline-source --root dist > dist/bundle.html"
   },
   "dependencies": {
     "jquery": "^3.6.0",
