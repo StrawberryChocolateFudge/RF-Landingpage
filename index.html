@@ -14,11 +14,11 @@
     <title>Ricardian Fabric</title>
 
     <!--====== Favicon Icon ======-->
-    <link
+    <!-- <link
       rel="shortcut icon"
       href="assets/images/favicon.png"
       type="image/png"
-    />
+    /> -->
 
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -38,7 +38,14 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-
+  <style>
+    #canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  </style>
   <body>
     <!--====== HEADER PART START ======-->
 
@@ -76,18 +83,18 @@
                 >
                   <ul class="navbar-nav m-auto">
                     <li class="nav-item active">
-                      <a class="page-scroll" href="#home">HOME</a>
+                      <a class="page-scroll" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#service">SERVICES</a>
+                      <a class="page-scroll" href="#service">Services</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#pricing">PRICING</a>
+                      <a class="page-scroll" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#contact">CONTACT</a>
+                      <a class="page-scroll" href="#contact">Contact</a>
                     </li>
-                      <li class="nav-item">
+                    <li class="nav-item">
                       <a href="https://medium.com/@peterh_80489">Blog</a>
                     </li>
                   </ul>
@@ -120,12 +127,7 @@
         <!-- container -->
       </div>
       <!-- navgition -->
-
-      <div
-        id="home"
-        class="header-hero bg_cover"
-        style="background-image: url(assets/images/header-bg.jpg)"
-      >
+      <div id="home" class="header-hero bg_cover">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-10">
@@ -147,7 +149,11 @@
                     >
                   </li>
                   <li>
-                    <a class="main-btn btn-two video-popup">Become a partner</a>
+                    <a
+                      class="main-btn btn-two video-popup"
+                      href="https://medium.com/@peterh_80489/what-is-ricardian-fabric-337688351538"
+                      >How it works?</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -161,6 +167,7 @@
           <img src="assets/images/header-shape.svg" alt="shape" />
         </div>
       </div>
+
       <!-- header content -->
     </header>
 
@@ -253,7 +260,10 @@
       <!-- conteiner -->
       <div class="services-image d-lg-flex align-items-center">
         <div class="image">
-          <img src="assets/images/undraw_Agreement_re_d4dv.svg" alt="Services" />
+          <img
+            src="assets/images/undraw_Agreement_re_d4dv.svg"
+            alt="Services"
+          />
         </div>
       </div>
       <!-- services image -->
@@ -305,7 +315,7 @@
                 <a
                   class="main-btn"
                   href="https://arweave.net/E3HMS6AIUPLNYc_dSEbR6D78AZq0d_qP13HNo1gjnoU"
-                  >GET STARTED</a
+                  >See the App</a
                 >
               </div>
               <div class="buttom-shape">
@@ -564,29 +574,15 @@
     <!--====== CALL TO ACTION PART START ======-->
 
     <section id="call-to-action" class="call-to-action">
-      <div class="call-action-image">
-        <img src="assets/images/call-to-action.png" alt="call-to-action" />
-      </div>
+      <div class="call-action-image"></div>
 
       <div class="container-fluid">
-        <div class="row justify-content-end">
-          <div class="col-lg-6">
-            <div class="call-action-content text-center">
-              <h2 class="call-title">Curious to Learn More? Stay Tuned</h2>
-              <p class="text">
-                You let us know whenever you want us to update anything or think
-                something can be optimised.
-              </p>
-              <div class="call-newsletter">
-                <i class="lni-envelope"></i>
-                <input type="text" placeholder="john@email.com" />
-                <button type="submit">SUBSCRIBE</button>
-              </div>
-            </div>
-            <!-- slider-content -->
-          </div>
+        <div class="row justify-content-center">
+          <iframe
+            src="https://cdn.forms-content.sg-form.com/3ad045af-1639-11ec-9433-3ab67e376790"
+            frameborder="0"
+          />
         </div>
-        <!-- row -->
       </div>
       <!-- container -->
     </section>
@@ -612,16 +608,12 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="contact-form">
-              <form
-                id="contact-form"
-                action="assets/contact.php"
-                method="post"
-                data-toggle="validator"
-              >
+              <form id="contact-form">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="single-form form-group">
                       <input
+                        id="name-input"
                         type="text"
                         name="name"
                         placeholder="Your Name"
@@ -635,6 +627,7 @@
                   <div class="col-md-6">
                     <div class="single-form form-group">
                       <input
+                        id="email-input"
                         type="email"
                         name="email"
                         placeholder="Your Email"
@@ -648,6 +641,7 @@
                   <div class="col-md-6">
                     <div class="single-form form-group">
                       <input
+                        id="subject-input"
                         type="text"
                         name="subject"
                         placeholder="Subject"
@@ -661,6 +655,7 @@
                   <div class="col-md-6">
                     <div class="single-form form-group">
                       <input
+                        id="phone-input"
                         type="text"
                         name="phone"
                         placeholder="Phone"
@@ -674,6 +669,7 @@
                   <div class="col-md-12">
                     <div class="single-form form-group">
                       <textarea
+                        id="message-input"
                         placeholder="Your Message"
                         name="message"
                         data-error="Please, leave us a message."
@@ -683,11 +679,16 @@
                     </div>
                     <!-- single form -->
                   </div>
-                  <p class="form-message"></p>
+                  <p
+                    id="message-display"
+                    class="form-message"
+                    style="margin: 0 auto"
+                  ></p>
+
                   <div class="col-md-12">
                     <div class="single-form form-group text-center">
-                      <button type="submit" class="main-btn">
-                        send message
+                      <button id="submit-button" class="main-btn">
+                        Send message
                       </button>
                     </div>
                     <!-- single form -->
@@ -755,7 +756,7 @@
               <div class="footer-link">
                 <h6 class="footer-title">Company</h6>
                 <ul>
-                  <li><a href="#">About</a></li>
+                  <li><a href="https://medium.com/@peterh_80489">About</a></li>
                   <li><a class="page-scroll" href="#contact">Contact</a></li>
                 </ul>
               </div>
@@ -765,9 +766,10 @@
               <div class="footer-link">
                 <h6 class="footer-title">Services</h6>
                 <ul>
-                  <li><a href="#">Permaweb</a></li>
+                  <li><a href="#">Coming soon</a></li>
+                  <!-- <li><a href="#">Permaweb</a></li>
                   <li><a href="#">Agreements</a></li>
-                  <li><a href="#">Fees</a></li>
+                  <li><a href="#">Fees</a></li> -->
                 </ul>
               </div>
               <!-- footer link -->
@@ -776,15 +778,17 @@
               <div class="footer-link">
                 <h6 class="footer-title">Help</h6>
                 <ul>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="https://discord.gg/Z7eeksAzdh">Support</a></li>
+                  <!-- <li><a id="" >Terms & Conditions</a></li> -->
+                  <li>
+                    <a id="privacy-policy-button" href="https://arweave.net/Z2JufUPSvq6Nvbao7H6R8Fa6zDSJpEzPyMTq-DXOaOg">Privacy policy</a>
+                  </li>
                 </ul>
               </div>
               <!-- footer link -->
             </div>
             <div class="col-lg-4 col-md-6 col-sm-7">
-              <div class="footer-newsletter">
+              <!-- <div class="footer-newsletter">
                 <h6 class="footer-title">Subscribe Newsletter</h6>
                 <div class="newsletter">
                   <form action="#">
@@ -799,6 +803,7 @@
                   progress.
                 </p>
               </div>
+               -->
               <!-- footer newsletter -->
             </div>
           </div>
@@ -831,32 +836,35 @@
     <a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
 
     <!--====== BACK TO TOP PART ENDS ======-->
+
+
   </body>
 
   <!--====== jquery js ======-->
-  <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <!-- <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script> -->
 
   <!--====== Bootstrap js ======-->
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
 
   <!--====== Ajax Contact js ======-->
-  <script src="assets/js/ajax-contact.js"></script>
+  <!-- <script src="assets/js/ajax-contact.js"></script> -->
 
   <!--====== Scrolling Nav js ======-->
-  <script src="assets/js/jquery.easing.min.js"></script>
-  <script src="assets/js/scrolling-nav.js"></script>
+  <!-- <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/scrolling-nav.js"></script> -->
 
   <!--====== Validator js ======-->
-  <script src="assets/js/validator.min.js"></script>
+  <!-- <script src="assets/js/validator.min.js"></script> -->
 
   <!--====== Magnific Popup js ======-->
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <!-- <script src="assets/js/jquery.magnific-popup.min.js"></script> -->
 
   <!--====== Slick js ======-->
-  <script src="assets/js/slick.min.js"></script>
+  <!-- <script src="assets/js/slick.min.js"></script> -->
 
   <!--====== Main js ======-->
-  <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="main.ts"></script>
 </html>
