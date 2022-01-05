@@ -1,12 +1,13 @@
 import { html } from "lit-html";
+import { GetBlockie } from "./GetBlockies";
 
 export const SmartContractLogo = () => html`
   <style>
     .smartContract_animation_container {
       display: flex;
       position: relative;
-      height: 95vh;
-      width: 100%;
+      height: 100px;
+      width: 100px;
       align-items: center;
       justify-content: center;
     }
@@ -303,21 +304,29 @@ export const SmartContractLogo = () => html`
         <g>
           <foreignObject width="500" height="500" x="530" y="150">
             <div class="rr-image-container">
-              <img src="../images/image-1.jpg" alt="" />
+              <img
+                src="https://arweave.net/oG73jlGwhgw-lNiPOXHsuHKpDcWNlFaDgJdu3RfWmZg"
+              />
             </div>
           </foreignObject>
         </g>
         <g>
           <foreignObject width="500" height="500" x="530" y="150">
             <div class="rr-image-container">
-              <img src="../images/image-2.jpg" alt="" />
+              <img
+                src="https://arweave.net/Q32esTLMUkRzmWyfMPIWPbMIiniBO9cSaqfn5rzrczk"
+                alt=""
+              />
             </div>
           </foreignObject>
         </g>
         <g>
           <foreignObject width="500" height="500" x="530" y="150">
             <div class="rr-image-container">
-              <img src="../images/image-3.jpg" alt="" />
+              <img
+                src="https://arweave.net/D14v43FYaapOuACHKErekxYk41mK5wjzN7qNCBQuFxQ"
+                alt=""
+              />
             </div>
           </foreignObject>
         </g>

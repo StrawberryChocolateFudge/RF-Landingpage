@@ -5,8 +5,8 @@ export const AcceptLogo = () => html`
     .accept_animation_container {
       display: flex;
       position: relative;
-      height: 95vh;
-      width: 100%;
+      height: 100px;
+      width: 100px;
       align-items: center;
       justify-content: center;
     }
