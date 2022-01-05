@@ -23,7 +23,7 @@ export function permapinAnim() {
       "<"
     )
     .to("#g5mm5", { y: 615, duration: 1.5 }, "<")
-    .to("#g5mm6", { y: 300, duration: 1.5 }, "<")
+    // .to("#g5mm6", { y: 300, duration: 1.5 }, "<")
     .to("#g5mm8", { scaleY: 0.1, duration: 1.5 }, "<")
     .to("#g5mm9", { y: 175, duration: 1.1 }, "<+.1")
     .to("#g5m1, #g5o2", { y: 115, duration: 0.45 }, ">+.3")
