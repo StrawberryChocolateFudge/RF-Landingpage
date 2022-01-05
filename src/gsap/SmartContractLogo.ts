@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 
-export function smartContractLogo() {
+export function smartContractLogoAnim() {
   gsap.set(".smartContract_animation_container svg", { opacity: 1 });
 
   const repeatedSine = { repeat: -1, yoyo: true, ease: "sine.inOut" };
