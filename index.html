@@ -8,7 +8,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <style>
+      .flexNoWrap {
+        display: flex !important;
+        flex-wrap: nowrap;
+      }
 
+      .card {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      }
+    </style>
     <!--====== Title ======-->
     <title>Ricardian Fabric</title>
 
@@ -47,50 +56,21 @@
   </style>
   <body>
     <!--====== HEADER PART START ======-->
-
     <header class="header-area">
-      <div class="navgition navgition-transparent">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#"> </a>
-
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarOne"
-                  aria-controls="navbarOne"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="toggler-icon"></span>
-                  <span class="toggler-icon"></span>
-                  <span class="toggler-icon"></span>
-                </button>
-              </nav>
-              <!-- navbar -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- container -->
-      </div>
       <!-- navgition -->
       <div id="home" class="header-hero bg_cover">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-10">
+              <div id="managerLogo"></div>
+
               <div class="header-content text-center">
                 <h3 class="header-title">
                   An agreement protocol for the new open web.
                 </h3>
                 <p class="text">
-                  Ricardian Fabric provides on-chain agreements built on top of Arweave 
-                </p>
-                <p class="text">
-                  (IPFS bridge and Harmony integration coming soon).
+                  Ricardian Fabric provides on-chain agreements built on top of
+                  Arweave
                 </p>
                 <ul class="header-btn">
                   <li>
@@ -110,9 +90,11 @@
                   </li>
                 </ul>
               </div>
+
               <!-- header content -->
             </div>
           </div>
+
           <!-- row -->
         </div>
         <!-- container -->
@@ -125,7 +107,11 @@
     </header>
 
     <!--====== HEADER PART ENDS ======-->
-
+    <section>
+      <div class="container">
+        <div class="col"></div>
+      </div>
+    </section>
     <!--====== SERVICES PART START ======-->
 
     <section id="service" class="services-area">
@@ -135,8 +121,8 @@
             <div class="section-title pb-10">
               <h4 class="title">On-chain agreements</h4>
               <p class="text">
-                The agreement is conducted entirely on blockchain,
-                permanently stored and accessable.
+                The agreement is conducted entirely on blockchain, permanently
+                stored and accessable.
               </p>
               <p class="text">Useful for :</p>
             </div>
@@ -148,9 +134,9 @@
           <div class="col-lg-8">
             <div class="row">
               <div class="col-md-6">
-                <div class="services-content mt-40 d-sm-flex">
+                <div class="services-content mt-40 flexNoWrap">
                   <div class="services-icon">
-                    <i class="lni lni-coin"></i>
+                    <div id="contractLogo1"></div>
                   </div>
                   <div class="services-content media-body">
                     <h4 class="services-title">Smart contracts</h4>
@@ -165,9 +151,9 @@
                 <!-- services content -->
               </div>
               <div class="col-md-6">
-                <div class="services-content mt-40 d-sm-flex">
+                <div class="services-content mt-40 flexNoWrap">
                   <div class="services-icon">
-                    <i class="lni lni-protection"></i>
+                    <div id="contractLogo2"></div>
                   </div>
                   <div class="services-content media-body">
                     <h4 class="services-title">Privacy policy</h4>
@@ -182,9 +168,9 @@
                 <!-- services content -->
               </div>
               <div class="col-md-6">
-                <div class="services-content mt-40 d-sm-flex">
+                <div class="services-content mt-40 flexNoWrap">
                   <div class="services-icon">
-                    <i class="lni lni-stamp"></i>
+                    <div id="contractLogo3"></div>
                   </div>
                   <div class="services-content media-body">
                     <h4 class="services-title">Governance</h4>
@@ -199,17 +185,17 @@
                 <!-- services content -->
               </div>
               <div class="col-md-6">
-                <div class="services-content mt-40 d-sm-flex">
+                <div class="services-content mt-40 flexNoWrap">
                   <div class="services-icon">
-                    <i class="lni-bulb"></i>
+                    <div id="contractLogo4"></div>
                   </div>
                   <div class="services-content media-body">
                     <h4 class="services-title">Cross-chain</h4>
                     <p class="text">
-                      You can store the url of the agreement on any blockchain. 
+                      You can store the url of the agreement on any blockchain.
                     </p>
                     <p class="text">
-                       <strong>Integrate into any website easily!</strong>
+                      <strong>Integrate into any website easily!</strong>
                     </p>
                   </div>
                 </div>
@@ -225,11 +211,7 @@
       <!-- conteiner -->
       <div class="services-image d-lg-flex align-items-center">
         <div class="image">
-          <img
-            src="assets/images/undraw_Agreement_re_d4dv.svg"
-            alt="Services"
-            width="500"
-          />
+          <div id="contractSigning-anim"></div>
         </div>
       </div>
       <!-- services image -->
@@ -243,12 +225,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div
-                class="
-                  footer-logo-support
-                  d-md-flex
-                  align-items-end
-                  justify-content-between
-                "
+                class="footer-logo-support d-md-flex align-items-end justify-content-between"
               >
                 <div class="footer-logo d-flex align-items-end">
                   <a class="mt-30" href="index.html">
@@ -310,4 +287,5 @@
   <!--====== Bootstrap js ======-->
   <script inline src="assets/js/bootstrap.min.js"></script>
   <script inline src="assets/js/popper.min.js"></script>
+  <script src="./main.ts"></script>
 </html>
