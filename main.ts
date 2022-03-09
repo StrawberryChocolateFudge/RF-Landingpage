@@ -13,9 +13,13 @@ import { SignContractLogo } from "./src/view/SignContractLogo";
 import { SmartContractLogo } from "./src/view/SmartContractLogo";
 
 (function renderAnim() {
+  const contractSigningAnimEl = document.getElementById("contractSigning-anim");
   const managerLogoEl = document.getElementById("managerLogo");
+
   render(ManagerLogo(), managerLogoEl);
+  render(SignContractLogo(), contractSigningAnimEl);
   managerLogoAnim();
+  signContractLogoAnim();
 
   const contractLogoEl1 = document.getElementById("contractLogo1");
   render(ContractLogo(), contractLogoEl1);
@@ -29,7 +33,4 @@ import { SmartContractLogo } from "./src/view/SmartContractLogo";
   render(SmartContractLogo(), contractLogoEl4);
   contractLogoAnim();
   smartContractLogoAnim();
-  const contractSigningAnimEl = document.getElementById("contractSigning-anim");
-  render(SignContractLogo(), contractSigningAnimEl);
-  signContractLogoAnim();
 })();
