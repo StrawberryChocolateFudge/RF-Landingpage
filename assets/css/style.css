@@ -2718,17 +2718,6 @@ p {
   position: relative;
   padding-bottom: 8px;
 }
-.single-pricing .pricing-header .sub-title::before {
-  position: absolute;
-  content: "";
-  width: 72px;
-  height: 4px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #2bdbdc;
-  margin: 0 auto;
-}
 .single-pricing .pricing-header .price {
   display: block;
   font-size: 64px;
@@ -3346,4 +3335,12 @@ p.form-message.error {
   color: #fff;
 }
 
+.height-400 {
+  height: 400px;
+}
+
+.auditTrailEl {
+  max-width: 700px;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
